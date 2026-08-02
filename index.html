@@ -1,46 +1,9 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#fffaf4" />
-    <title>Dollar · 狗狗日历</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app-shell">
-      <section id="calendar-page" class="page active">
-        <header class="profile-header">
-          <div class="avatar" aria-label="Dollar 默认头像">D</div>
-          <div><p class="eyebrow">Dollar 的日常</p><h1>狗狗日历</h1></div>
-          <button id="today-button" class="icon-button" aria-label="回到今天">今天</button>
-        </header>
-        <section class="month-card" aria-label="月历">
-          <div class="month-navigation"><button id="previous-month" class="arrow" aria-label="上个月">‹</button><h2 id="month-title"></h2><button id="next-month" class="arrow" aria-label="下个月">›</button></div>
-          <div class="weekdays"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span></div>
-          <div id="calendar-grid" class="calendar-grid"></div>
-          <div class="legend"><span><i class="walk"></i>遛狗</span><span><i class="park"></i>狗公园</span><span><i class="hike"></i>Hiking</span><span><i class="bath"></i>洗澡</span></div>
-        </section>
-        <section class="home-summary">
-          <button id="bath-reminder" class="reminder-card"><span class="reminder-icon bath-icon">✦</span><span><small>洗澡提醒</small><strong id="bath-reminder-text">设置下次提醒</strong></span><span class="chevron">›</span></button>
-          <button id="weight-reminder" class="reminder-card"><span class="reminder-icon weight-icon">⌁</span><span><small>称重提醒</small><strong id="weight-reminder-text">设置下次提醒</strong></span><span class="chevron">›</span></button>
-          <div class="weight-summary"><div><small>最近体重</small><strong id="latest-weight">还没有记录</strong></div><button id="quick-weight" class="text-button">记录体重</button></div>
-        </section>
-      </section>
-
-      <section id="health-page" class="page">
-        <header class="page-header"><p class="eyebrow">Dollar 的健康档案</p><h1>健康与护理</h1></header>
-        <section class="health-card"><div class="card-heading"><div><p class="card-kicker">每月记录</p><h2>体重</h2></div><button id="add-weight" class="round-add" aria-label="新增体重">+</button></div><div id="weight-content" class="empty-state">还没有体重记录</div></section>
-        <section class="health-card"><div class="card-heading"><div><p class="card-kicker">简单记录</p><h2>洗澡</h2></div><button id="add-bath" class="round-add" aria-label="新增洗澡记录">+</button></div><div id="bath-content" class="empty-state">还没有洗澡记录</div></section>
-        <section class="health-card"><div class="card-heading"><div><p class="card-kicker">年度清单</p><h2>疫苗</h2></div><button id="add-vaccine" class="round-add" aria-label="新增疫苗记录">+</button></div><div id="vaccine-content" class="empty-state">还没有疫苗记录</div></section>
-        <button id="settings-button" class="settings-link">单位设置 <span id="unit-label">kg</span><span>›</span></button>
-      </section>
-
-      <nav class="bottom-nav" aria-label="主导航"><button class="nav-item active" data-page="calendar-page"><span>▦</span>日历</button><button class="nav-item" data-page="health-page"><span>♡</span>健康与护理</button></nav>
-    </main>
-    <div id="sheet-backdrop" class="sheet-backdrop hidden"></div>
-    <section id="bottom-sheet" class="bottom-sheet hidden" aria-modal="true" role="dialog"></section>
-    <div id="toast" class="toast hidden"></div>
-    <script src="app.js"></script>
-  </body>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/><meta name="theme-color" content="#fbf7f1"/><title>Dollar</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+  <main id="app"></main>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+</body>
 </html>
