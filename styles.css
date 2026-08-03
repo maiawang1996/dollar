@@ -63,13 +63,16 @@
 .swatch.bath::after{content:"🫧";position:absolute;inset:-3px;font-style:normal;font-size:14px;line-height:1}
 .choice.bath,.activity-pill.bath{background:#f3f9fb}
 
-/* Health & care dogs are fixed decorative markers, placed to match the reference layout. */
-.care-dog{position:absolute;pointer-events:none;cursor:default}
-.care-dog-1{left:90px;top:92px}
-.care-dog-2{left:auto;right:21px;top:302px}
-.care-dog-3{left:82px;top:680px}
-.care-dog-4{left:auto;right:21px;top:792px}
+/* Health & care dogs are anchored to their matching section headings. */
+.section-title{position:relative;display:flex;align-items:center;height:44px}.section-title .care-dog{position:absolute;left:calc(100% + 7px);top:50%;pointer-events:none;cursor:default;transform:translateY(-50%) scale(.8);transform-origin:left center;z-index:1}.section-title .care-dog-1{margin-top:1px;transform:translateY(-50%) scale(.64)}.section-title .care-dog-2{margin-top:-1px}.section-title .care-dog-3{margin-top:2px}
+.care-footer-dog{position:fixed;left:calc(75% - 20px);top:auto;bottom:calc(69px + env(safe-area-inset-bottom));pointer-events:none;cursor:default;transform:scale(.8);transform-origin:center bottom;z-index:5}
+.section-bath .section-head{background:linear-gradient(90deg,rgba(217,239,246,.72),transparent 70%)}.section-weight .section-head{background:linear-gradient(90deg,rgba(218,234,205,.76),transparent 70%)}.section-vaccine .section-head{background:linear-gradient(90deg,rgba(248,221,215,.78),transparent 70%)}.section-bath .section-head,.section-weight .section-head,.section-vaccine .section-head{padding:4px 7px 4px 10px;margin-left:-10px;border-radius:17px}.section-bath .card{background:linear-gradient(135deg,#fffdfa 55%,#f2fafc)}.section-weight .card{background:linear-gradient(135deg,#fffdfa 55%,#f4faef)}.section-vaccine .card{background:linear-gradient(135deg,#fffdfa 55%,#fff4f1)}.section-bath .add{background:#c7e3ec;color:#345562}.section-weight .add{background:#cfe1c5;color:#40593d}.section-vaccine .add{background:#f2cfc7;color:#704944}
+.section-title .care-dog-2{transform:translateY(-50%) scale(.72)}
+.page-title{display:inline-flex;align-items:center;min-height:46px;padding:8px 15px;border-radius:18px;background:linear-gradient(135deg,#f5d6cf,#efc5bc);box-shadow:0 7px 18px rgba(155,113,91,.12);color:#4a3935;font-size:22px;letter-spacing:-.7px;margin:4px 0 20px}.page-title::before{content:"♡";font-size:17px;margin-right:7px;color:#9b715b}
+.page-title{display:block;min-height:0;margin:5px 0 25px;padding:4px 0 13px;border-radius:0;background:none;box-shadow:none;text-align:center;font-size:24px;letter-spacing:-1px;position:relative}.page-title::before{content:none}.page-title::after{content:"";position:absolute;left:50%;bottom:0;width:86px;height:4px;transform:translateX(-50%);border-radius:99px;background:linear-gradient(90deg,#efb7ab,#f1d79a,#a9c9a2,#9bbce0,#b6a7d2)}
 
 /* The trend placeholder and the chart both need breathing room before records. */
 .chart + .record,.empty + .record{margin-top:20px}
+.section .chart + .record,.section .empty + .record,.section .empty + .empty{margin-top:28px!important}
+.page-title,.section h2,.add{font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;font-weight:400}.add{letter-spacing:.3px}.page-title{font-weight:400}body{font-family:"Noto Sans SC",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
 .cloud-box{display:grid;gap:8px;padding:14px;border-radius:18px;background:rgba(223,232,207,.56);margin-top:8px}.cloud-box b{font-size:15px}.cloud-box small{color:#766f68}.cloud-box.connected{grid-template-columns:1fr auto auto;align-items:center}.cloud-box.connected small{display:block;margin-top:3px}.cloud-action{width:100%;margin-top:2px}.cloud-message{color:#675985!important}.text-btn{white-space:nowrap}
