@@ -14,7 +14,7 @@
   .notice .card{padding:13px 12px}
   .notice b{font-size:13px}
   .nav{min-width:0;flex:1;padding-left:8px;padding-right:8px}
-  .dog-calendar{right:57px;transform:scale(.9);transform-origin:bottom right}
+  .dog-calendar{right:51px;transform:scale(.63);transform-origin:bottom right}
 }
 
 @media (max-width:360px){
@@ -43,3 +43,22 @@
 /* Leave unrecorded days almost transparent so the dog drawing can show through. */
 .day{background:rgba(255,253,250,.10);border:1px solid rgba(48,45,43,.07)}
 .day.walk,.day.park,.day.hike,.day.custom,.day.bath{border-color:transparent}
+.dot{display:none}
+
+/* Separate the weight trend card from the list of individual records. */
+.chart{margin:14px 0 20px}
+
+/* Health & care page: keep all four draggable dogs 20% smaller. */
+.care-dog{transform:scale(.8);transform-origin:top left}
+
+/* Hiking uses a single clear sky-blue color across calendar, legend and picker. */
+.day.hike{background:#91cbe8;color:#fff}
+.swatch.hike{background:#91cbe8}
+.choice.hike{background:#dcedf6}
+
+/* Bath days are shown with a bubble rather than a purple filled square. */
+.day.bath{background:transparent;color:var(--ink)}
+.day.bath::after{content:"🫧";position:absolute;right:3px;bottom:2px;font-size:16px;line-height:1}
+.swatch.bath{width:14px;height:14px;background:none;position:relative}
+.swatch.bath::after{content:"🫧";position:absolute;inset:-3px;font-style:normal;font-size:14px;line-height:1}
+.choice.bath,.activity-pill.bath{background:#f3f9fb}
