@@ -1,0 +1,16 @@
+{
+  "name": "Dollar",
+  "short_name": "Dollar",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbf7f1",
+  "theme_color": "#fbf7f1",
+  "icons": [
+    {
+      "src": "dollar-app-icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
