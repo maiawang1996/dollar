@@ -39,3 +39,7 @@
 .calendar-card>.week,.calendar-card>.days,.calendar-card>.legend{position:relative;z-index:1}
 
 @media (max-width:402px){.day{padding:4px;font-size:11px}}
+
+/* Leave unrecorded days almost transparent so the dog drawing can show through. */
+.day{background:rgba(255,253,250,.10);border:1px solid rgba(48,45,43,.07)}
+.day.walk,.day.park,.day.hike,.day.custom,.day.bath{border-color:transparent}
