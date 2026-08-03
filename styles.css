@@ -74,5 +74,6 @@
 /* The trend placeholder and the chart both need breathing room before records. */
 .chart + .record,.empty + .record{margin-top:20px}
 .section .chart + .record,.section .empty + .record,.section .empty + .empty{margin-top:28px!important}
+.section-weight .empty + .empty{margin-top:10px!important}
 .page-title,.section h2,.add{font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;font-weight:400}.add{letter-spacing:.3px}.page-title{font-weight:400}body{font-family:"Noto Sans SC",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
 .cloud-box{display:grid;gap:8px;padding:14px;border-radius:18px;background:rgba(223,232,207,.56);margin-top:8px}.cloud-box b{font-size:15px}.cloud-box small{color:#766f68}.cloud-box.connected{grid-template-columns:1fr auto auto;align-items:center}.cloud-box.connected small{display:block;margin-top:3px}.cloud-action{width:100%;margin-top:2px}.cloud-message{color:#675985!important}.text-btn{white-space:nowrap}
