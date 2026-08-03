@@ -62,3 +62,13 @@
 .swatch.bath{width:14px;height:14px;background:none;position:relative}
 .swatch.bath::after{content:"🫧";position:absolute;inset:-3px;font-style:normal;font-size:14px;line-height:1}
 .choice.bath,.activity-pill.bath{background:#f3f9fb}
+
+/* Health & care dogs are fixed decorative markers, placed to match the reference layout. */
+.care-dog{position:absolute;pointer-events:none;cursor:default}
+.care-dog-1{left:90px;top:92px}
+.care-dog-2{left:auto;right:21px;top:302px}
+.care-dog-3{left:82px;top:680px}
+.care-dog-4{left:auto;right:21px;top:792px}
+
+/* The trend placeholder and the chart both need breathing room before records. */
+.chart + .record,.empty + .record{margin-top:20px}
